@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        ArrayList<Object> list = new ArrayList<>();
+
+        list.add(1);
+        list.add(2);
+        list.add("Hello");
+        list.add("World");
+
+        ListIterator<Object> iterator = list.listIterator();
+
+        while (iterator.hasNext()) {
+
+            Object value = iterator.next();
+
+            if (value instanceof String) {
+                System.out.println(value);
+            }
+        }
+
+        sc.close();
+    }
+}
